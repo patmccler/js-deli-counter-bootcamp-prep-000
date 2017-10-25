@@ -17,10 +17,10 @@ function nowServing(line)
 function currentLine(line) {
   if(line.length > 0)
   {
-    var line_str = ""
+    var line_str = "The line is currently: "
     for(let i = 0; i < line.length; i++)
     {
-      line_str = line_str + line[i]
+      line_str += `${i}. ${line[i]} `
     }
     return line_str
   }
